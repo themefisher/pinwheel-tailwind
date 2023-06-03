@@ -1,8 +1,8 @@
 {
-  "name": "themeplate",
-  "version": "1.1.7",
-  "description": "Gulp and Tailwindcss boilerplate for creating HTML templates",
-  "author": "Zeon Studio",
+  "name": "pinwheel-tailwind",
+  "version": "1.0.0",
+  "description": "pinwheel-tailwind is a free and open-source Tailwind CSS template for building modern landing pages.",
+  "author": "themefisher",
   "license": "MIT",
   "scripts": {
     "dev": "gulp dev",

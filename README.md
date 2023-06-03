@@ -43,7 +43,7 @@ If your problem or idea has not been addressed yet, feel free to [open a new iss
 
 ## 📝 License
 
-Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
+Copyright (c) 2023 - Present, Designed & Developed by [Themefisher](https://themefisher.com/)
 
 **Code License:** Released under the [MIT](https://github.com./themefisher/pinwheel-tailwind/blob/main/LICENSE) license.
 
