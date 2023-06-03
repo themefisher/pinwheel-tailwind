@@ -1,0 +1,81 @@
+// navbar toggler
+input#nav-toggle:checked ~ label#show-button {
+  @apply hidden;
+}
+
+input#nav-toggle:checked ~ label#hide-button {
+  @apply flex lg:hidden;
+}
+
+input#nav-toggle:checked ~ #nav-menu {
+  @apply block lg:flex;
+}
+
+.header {
+  @apply sticky top-0 z-50  bg-white py-6 transition-all duration-300 lg:bg-transparent;
+
+  &-sticky {
+    @apply bg-white shadow;
+  }
+}
+
+// navbar items
+.navbar {
+  @apply relative flex flex-wrap items-center justify-between;
+}
+
+.navbar-brand {
+  @apply text-xl font-semibold text-dark;
+  image {
+    @apply max-h-full max-w-full;
+  }
+}
+
+.navbar-nav {
+  @apply text-center lg:text-left;
+}
+
+.nav-link {
+  @apply p-3 py-2 text-[15px] text-dark transition hover:text-primary md:px-2 inline-block;
+
+  &.active {
+    @apply relative;
+
+    &::after {
+      @apply absolute left-2 bottom-0 right-2 h-0.5 bg-gradient-to-tl content-[''];
+    }
+  }
+}
+
+.nav-dropdown {
+  @apply mr-0;
+}
+
+.nav-dropdown-list {
+  @apply z-10 rounded-lg bg-white p-4 shadow;
+}
+
+.nav-dropdown-item {
+  @apply mb-1;
+}
+
+.nav-dropdown-link {
+  @apply min-w-[150px] py-1 text-lg font-semibold text-dark transition hover:text-primary;
+}
+
+// search style
+.search-icon {
+  @apply cursor-pointer p-2 text-xl text-dark hover:text-primary;
+}
+.search-modal {
+  @apply invisible absolute top-0 left-0 right-0 z-10 h-10 bg-white opacity-0 transition md:h-full;
+  .form-input {
+    @apply h-full w-full border-0 text-lg;
+  }
+  .search-close {
+    @apply absolute top-1/2 right-2 -translate-y-1/2 p-3 text-h4;
+  }
+  &.open {
+    @apply visible opacity-100;
+  }
+}
