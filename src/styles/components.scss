@@ -16,9 +16,9 @@
 // social icon style
 .social-icons {
   @apply -ml-2 -mt-2;
-  
+
   li {
-    @apply inline-block m-2 leading-none;
+    @apply m-2 inline-block leading-none;
 
     a {
       @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-center transition-all duration-200 hover:bg-primary;
@@ -176,7 +176,7 @@ select:invalid {
 // content style
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mt-[.5em] prose-headings:mb-[.9em] prose-headings:font-bold prose-headings:text-dark;
+  @apply prose-headings:mb-[.9em] prose-headings:mt-[.5em] prose-headings:font-bold prose-headings:text-dark;
   @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
@@ -191,7 +191,7 @@ select:invalid {
   @apply prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
   @apply prose-li:text-text prose-li:marker:text-dark;
   @apply prose-table:overflow-hidden prose-table:border prose-table:border-border;
-  @apply prose-thead:border-border prose-thead:bg-theme-light prose-th:py-4 prose-th:px-4;
+  @apply prose-thead:border-border prose-thead:bg-theme-light prose-th:px-4 prose-th:py-4;
   @apply prose-tr:border-border;
   @apply prose-td:px-3 prose-td:py-4;
 
@@ -237,11 +237,11 @@ select:invalid {
   }
 
   &-play-btn {
-    @apply absolute top-1/2 left-1/2 z-10 flex h-[78px] w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
+    @apply absolute left-1/2 top-1/2 z-10 flex h-[78px] w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
     animation: shadow-pulse 1.5s infinite;
 
     &::after {
-      @apply absolute top-0 left-0 h-full w-full rounded-full content-[''];
+      @apply absolute left-0 top-0 h-full w-full rounded-full content-[''];
       animation: shadow-pulse-2 1.4s infinite;
     }
   }
@@ -349,7 +349,7 @@ select:invalid {
   }
 
   &-footer {
-    @apply border-t border-border pt-6 pb-0;
+    @apply border-t border-border pb-0 pt-6;
   }
 }
 
@@ -391,7 +391,8 @@ select:invalid {
 .filter-btn {
   @apply m-3 rounded-3xl border border-[#A9A9A9] text-dark;
 
-  &-active, &.active {
+  &-active,
+  &.active {
     @apply border-white bg-white text-dark shadow-[0px_10px_20px_rgba(0,0,0,0.05)];
   }
 }
@@ -464,7 +465,7 @@ select:invalid {
   &-content {
     @apply relative;
     &::before {
-      @apply absolute left-0 -top-[38px] h-[18px] w-[18px] rounded-full border-4 border-primary bg-body content-[''] lg:-left-[49px] lg:top-0;
+      @apply absolute -top-[38px] left-0 h-[18px] w-[18px] rounded-full border-4 border-primary bg-body content-[''] lg:-left-[49px] lg:top-0;
     }
 
     ul {
@@ -550,7 +551,7 @@ select:invalid {
     }
 
     .accordion-content {
-      @apply pt-1 pb-6;
+      @apply pb-6 pt-1;
 
       p + p {
         @apply mt-6;
@@ -568,10 +569,10 @@ select:invalid {
 }
 
 .features-tab-item {
-  @apply pl-6 cursor-pointer border-l border-[#999999];
+  @apply cursor-pointer border-l border-[#999999] pl-6;
 
   h2 {
-    @apply text-2xl font-bold font-primary text-[#999999];
+    @apply font-primary text-2xl font-bold text-[#999999];
   }
 
   p {
@@ -589,14 +590,13 @@ select:invalid {
   }
 }
 
-
 .filter-list {
-  @apply flex items-center flex-nowrap overflow-auto;
+  @apply flex flex-nowrap items-center overflow-auto;
   // scrollbar-width: auto;
   // scrollbar-color: #8f54a0 #ffffff;
 
   .filter-btn {
-    @apply whitespace-nowrap
+    @apply whitespace-nowrap;
   }
 
   // /* ===== Scrollbar CSS ===== */
