@@ -20,6 +20,26 @@
     }
   });
 
+  // Navbar Toggler
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarMenu = document.querySelector("#nav-menu");
+
+  navbarToggler?.addEventListener("click", () => {
+    navbarToggler.classList.toggle("active");
+    navbarMenu.classList.toggle("active");
+  });
+
+  // Dropdown Menu Toggler For Mobile
+  const dropdownMenuToggler = document.querySelectorAll(
+    ".nav-dropdown > .nav-link"
+  );
+
+  dropdownMenuToggler.forEach((toggler) => {
+    toggler?.addEventListener("click", (e) => {
+      e.target.parentElement.classList.toggle("active");
+    });
+  });
+
   //reviews-carousel
   new Swiper(".reviews-carousel", {
     loop: true,
