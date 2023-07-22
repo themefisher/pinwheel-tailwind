@@ -3,9 +3,12 @@
   @apply py-16;
 }
 
-// container
+// Container
 .container {
-  @apply mx-auto max-w-[1202px] px-3;
+  @apply mx-auto w-full pl-[var(--gutter-x,calc(1.5rem_/_2))] pr-[var(--gutter-x,calc(1.5rem_/_2))];
+}
+.container {
+  --gutter-x: 1rem;
 }
 
 // form style
@@ -18,13 +21,13 @@
   @apply -ml-2 -mt-2;
 
   li {
-    @apply m-2 inline-block leading-none;
+    @apply m-1 inline-block leading-none;
 
     a {
-      @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-center transition-all duration-200 hover:bg-primary;
+      @apply inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-center transition-all duration-200 hover:bg-primary;
 
       svg {
-        @apply m-auto h-11;
+        @apply m-auto h-[14px];
       }
 
       path {
@@ -216,16 +219,16 @@ select:invalid {
 
 .key-feature-grid {
   p {
-    @apply mt-3 text-sm;
+    @apply mt-3 text-sm/normal;
   }
 
-  .icon {
-    @apply h-6 w-6;
+  // .icon {
+  //   @apply h-6 w-6;
 
-    img {
-      @apply h-full w-full object-contain;
-    }
-  }
+  //   img {
+  //     @apply h-full w-full object-contain;
+  //   }
+  // }
 }
 
 //video
@@ -273,7 +276,7 @@ select:invalid {
 
 //review-carousel
 .review {
-  @apply my-16 rounded-xl bg-white px-3 py-6 pb-16 text-center shadow;
+  @apply my-16 rounded-xl bg-white px-8 py-6 pb-16 text-center shadow;
 
   &-author-avatar {
     @apply mx-auto -mt-12 h-[90px] w-[90px] -translate-y-5 rounded-full p-0.5;
@@ -298,25 +301,31 @@ select:invalid {
   }
 
   .tab-nav-item {
-    @apply mb-4 flex rounded py-0 text-dark opacity-100;
+    @apply relative z-10 mb-4 flex rounded py-1 text-dark opacity-100;
+    @apply before:absolute before:left-0 before:top-1/2 before:-z-10 before:h-[140%] before:w-full before:-translate-y-1/2 before:rounded before:content-[""];
   }
   .tab-nav-item.active {
-    @apply border-b-0 bg-primary/40 py-3.5;
+    @apply border-b-0 before:bg-primary/10;
   }
 }
 
 //footer
 .footer {
   h6 {
-    @apply mb-4 font-primary font-semibold lg:mb-8;
+    @apply mb-4 font-primary font-semibold lg:mb-6;
   }
 
   p {
-    @apply text-sm;
+    @apply text-sm/[1.8];
   }
 
   li > a {
-    @apply text-sm hover:text-primary hover:underline;
+    @apply text-sm/8 transition-colors duration-300 hover:text-primary hover:underline;
+  }
+  .footer-copyright {
+    a {
+      @apply text-primary underline hover:no-underline; 
+    }
   }
 }
 

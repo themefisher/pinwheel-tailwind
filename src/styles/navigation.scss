@@ -42,17 +42,17 @@ input#nav-toggle:checked ~ #nav-menu {
     @apply relative;
 
     &::after {
-      @apply absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-tl content-[''];
+      @apply absolute bottom-0 max-lg:w-[20%] max-lg:mx-auto left-2 right-2 h-0.5 bg-gradient-to-tl content-[''];
     }
   }
 }
 
 .nav-dropdown {
-  @apply mr-0;
+  @apply mr-0 mx-auto;
 }
 
 .nav-dropdown-list {
-  @apply z-10 mx-auto ml-1 mt-4 min-w-[180px] rounded-lg border-0 border-solid  border-primary/25 bg-primary/5 px-4 py-3  shadow-sm duration-300 lg:mt-0 lg:border lg:bg-white lg:shadow-[0_0.9rem_1.56rem_rgb(0,0,0,0.1)];
+  @apply z-10 mx-auto lg:ml-1 mt-4 max-w-[280px] lg:min-w-[180px] rounded-lg border-0 border-solid border-primary/25 bg-primary/5 px-4 py-3 shadow-sm duration-300 lg:mt-0 lg:border lg:bg-white lg:shadow-[0_0.9rem_1.56rem_rgb(0,0,0,0.1)];
 }
 
 .nav-dropdown-item {

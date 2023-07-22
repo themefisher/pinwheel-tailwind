@@ -1,9 +1,9 @@
 html {
-  @apply overflow-x-hidden text-base;
+  @apply text-base;
 }
 
 body {
-  @apply overflow-x-hidden bg-body bg-[url('/images/body-bg.svg')] bg-cover bg-no-repeat font-primary font-normal leading-relaxed text-text;
+  @apply bg-body bg-[url('/images/body-bg.svg')] bg-cover bg-no-repeat font-primary font-normal leading-relaxed text-text overflow-x-hidden;
 }
 
 h1,
