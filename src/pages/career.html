@@ -145,24 +145,33 @@
         </p>
         <ul class="filter-list mt-8 flex flex-wrap items-center justify-center">
           <li>
-            <a class="filter-btn filter-btn-active btn btn-sm" href="#"
+            <a
+              data-group="all"
+              class="filter-btn filter-btn-active btn btn-sm"
+              href="#"
               >All Categories</a
             >
           </li>
           <li>
-            <a class="filter-btn btn btn-sm" href="#">Design</a>
+            <a data-group="design" class="filter-btn btn btn-sm" href="#"
+              >Design</a
+            >
           </li>
           <li>
-            <a class="filter-btn btn btn-sm" href="#">Development</a>
+            <a data-group="development" class="filter-btn btn btn-sm" href="#"
+              >Development</a
+            >
           </li>
           <li>
-            <a class="filter-btn btn btn-sm" href="#">Marketing</a>
+            <a data-group="marketing" class="filter-btn btn btn-sm" href="#"
+              >Marketing</a
+            >
           </li>
         </ul>
       </div>
     </div>
-    <div class="row pt-12">
-      <div class="mb-8 md:col-6">
+    <div class="filter-items row pt-12">
+      <div data-groups='["development"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Sr. React Native Developer</h3>
@@ -215,7 +224,7 @@
           </ul>
         </div>
       </div>
-      <div class="mb-8 md:col-6">
+      <div data-groups='["design"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead UI/UX Designer</h3>
@@ -268,7 +277,7 @@
           </ul>
         </div>
       </div>
-      <div class="mb-8 md:col-6">
+      <div data-groups='["marketing"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Head of Inbound Marketing</h3>
@@ -321,7 +330,7 @@
           </ul>
         </div>
       </div>
-      <div class="mb-8 md:col-6">
+      <div data-groups='["design"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead Brand Designer</h3>
@@ -374,7 +383,7 @@
           </ul>
         </div>
       </div>
-      <div class="mb-8 md:col-6">
+      <div data-groups='["design"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead UI/UX Designer</h3>
@@ -427,7 +436,7 @@
           </ul>
         </div>
       </div>
-      <div class="mb-8 md:col-6">
+      <div data-groups='["development"]' class="mb-8 md:col-6">
         <div
           class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Sr. React Native Developer</h3>
@@ -483,3 +492,5 @@
     </div>
   </div>
 </section>
+
+@@include('footer.html')

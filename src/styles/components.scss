@@ -3,6 +3,11 @@
   @apply py-16;
 }
 
+// Preloader
+.preloader {
+  @apply w-screen transition-colors duration-300 h-screen fixed bg-white left-0 bottom-0 z-50 overflow-hidden;
+}
+
 // Container
 .container {
   @apply mx-auto w-full pl-[var(--gutter-x,calc(1.5rem_/_2))] pr-[var(--gutter-x,calc(1.5rem_/_2))];
