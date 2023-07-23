@@ -44,7 +44,7 @@ gulp.task("pages", function () {
     .pipe(
       wrapper({
         header:
-          "<!DOCTYPE html>\n<html lang=\"zxx\">\n@@include('head.html')\n@@include('header.html')\n<body>",
+          "<!DOCTYPE html>\n<html lang=\"zxx\">\n@@include('head.html')\n<body>",
         footer:
           node_env === "dev"
             ? "@@include('components/tw-size-indicator.html')\n @@include('footer.html')\n</body>\n</html>"

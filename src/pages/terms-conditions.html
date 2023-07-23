@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "terms"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero py-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Terms Conditions</a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Terms & Conditions"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">Terms & Condition Of Pinwheel</h1>

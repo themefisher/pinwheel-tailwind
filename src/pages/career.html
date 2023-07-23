@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "career"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -14,17 +16,10 @@
 <!-- ./end floating assets -->
 
 <!-- Common hero -->
-<section class="page-hero overflow-hidden py-16">
+<section class="page-hero py-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Career</a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Career"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">Career In Pinwheel</h1>
@@ -68,81 +63,69 @@
     </div>
     <div class="row pt-14 text-center">
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-1.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-yellow-50 text-center text-3xl leading-[80px] text-yellow-500">
+          <i class="fa-solid fa-money-bill"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">Competitive salary</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-2.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-blue-50 text-center text-3xl leading-[80px] text-blue-500">
+          <i class="fa-solid fa-house-laptop"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">100% remote</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-3.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-green-50 text-center text-3xl leading-[80px] text-green-500">
+          <i class="fa-solid fa-bolt"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">Unlimited PTO</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-4.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-violet-50 text-center text-3xl leading-[80px] text-violet-500">
+          <i class="fa-solid fa-clock"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">Flexible hours</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-5.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-red-50 text-center text-3xl leading-[80px] text-red-500"
+          ><i class="fa-solid fa-kit-medical"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">Medical insurance</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
       <div class="mb-10 sm:col-6 lg:col-4">
-        <img
-          class="mx-auto"
-          src="images/career/icon-6.png"
-          width="100"
-          h="90"
-          alt="" />
+        <span
+          class="mx-auto mb-7 block h-20 w-20 rounded-full border border-border/50 bg-amber-50 text-center text-3xl leading-[80px] text-amber-500"
+          ><i class="fa-solid fa-seedling"></i>
+        </span>
         <h3 class="h4 mb-4 mt-8">Career growth</h3>
         <p>
           Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit
-          neque, autor sit amet aliuam vel
+          neque, autor sit amet aliuam
         </p>
       </div>
     </div>
@@ -180,7 +163,8 @@
     </div>
     <div class="row pt-12">
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Sr. React Native Developer</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -189,7 +173,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -203,7 +187,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -218,17 +202,22 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead UI/UX Designer</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -237,7 +226,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -251,7 +240,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -266,17 +255,22 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Head of Inbound Marketing</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -285,7 +279,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -299,7 +293,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -314,17 +308,22 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead Brand Designer</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -333,7 +332,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -347,7 +346,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -362,17 +361,22 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Lead UI/UX Designer</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -381,7 +385,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -395,7 +399,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -410,17 +414,22 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="mb-8 md:col-6">
-        <div class="rounded-xl bg-white p-5 shadow-lg lg:p-10">
+        <div
+          class="relative rounded-xl bg-white p-5 transition-all duration-300 hover:-translate-y-px hover:shadow-lg lg:p-10">
           <h3 class="h4">Sr. React Native Developer</h3>
           <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam lorem
@@ -429,7 +438,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -443,7 +452,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -458,10 +467,14 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary after:absolute after:inset-0"
+                href="career-single.html">
+                Read More
+                <span class="sr-only">details</span>
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>

@@ -1,6 +1,9 @@
 // Navbar Collapse
+#nav-menu {
+  @apply max-lg:block max-lg:max-h-0 max-lg:overflow-hidden max-lg:transition-[max-height] max-lg:duration-[0.3s] max-lg:ease-[cubic-bezier(0.81,0.12,0.19,0.95)];
+}
 #nav-menu.active {
-  @apply block lg:flex;
+  @apply max-lg:max-h-[1000px];
 }
 
 .header {
@@ -32,14 +35,14 @@
 }
 
 .nav-link {
-  @apply block p-3 py-2 text-dark transition hover:text-primary md:px-2 lg:inline-block;
+  @apply relative block p-3 py-2 text-dark transition hover:text-primary hover:lg:after:w-[70%] md:px-2 lg:inline-block;
+
+  &:after {
+    @apply absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-gradient-to-tl transition-all duration-300 content-[''];
+  }
 
   &.active {
-    @apply relative;
-
-    &::after {
-      @apply absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-tl content-[''] max-lg:mx-auto max-lg:w-[20%];
-    }
+    @apply relative after:w-[70%] after:max-lg:mx-auto after:max-lg:w-[20%];
   }
 
   .arrow-icon {
@@ -70,6 +73,10 @@
 
 .nav-dropdown-link {
   @apply block min-w-[150px] py-[6px] leading-tight text-dark transition hover:text-primary;
+
+  &.active {
+    @apply text-primary;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -78,7 +85,7 @@
   .nav-dropdown-link {
     @apply text-sm;
   }
-  
+
   .nav-dropdown.active {
     & > .nav-link {
       @apply block;

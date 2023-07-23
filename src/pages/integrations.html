@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "integrations"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero pb-10 pt-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Integrations</a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Integrations"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">
@@ -90,19 +85,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>
@@ -123,19 +110,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>
@@ -156,19 +135,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>
@@ -189,19 +160,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>
@@ -222,19 +185,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>
@@ -255,19 +210,11 @@
               velit neque, autor sit amet aliuam vel
             </p>
           </div>
-          <a class="inline-flex items-center font-semibold text-dark" href="#">
+          <a class="group inline-flex items-center font-semibold text-dark" href="integration-single.html">
             View integration
-            <svg
-              class="ml-1.5"
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                fill="currentColor" />
-            </svg>
+            <div class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
       </div>

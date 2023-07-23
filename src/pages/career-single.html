@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "career-single"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero py-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Career</a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Career"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">Lead UI/UX Designer</h1>
@@ -39,73 +34,75 @@
       <div class="lg:col-8">
         <div
           class="career-single-content rounded-xl bg-white p-7 shadow-lg lg:px-12 lg:py-[60px]">
-          <h5 class="h5">What Is the role?</h5>
-          <p>
-            We are looking for a personal financial planning pro (Certified
-            Financial Planner™ preferred) who will lead our client advising
-            efforts. You will be a fiduciary who works with clients providing
-            holistic advice on areas including: saving, retirement, debt
-            management, investments. You’ll be on the front lines helping
-            clients in what is arguably the most important position at the
-            company.
-          </p>
-          <h5 class="h5">About you</h5>
-          <p>
-            We are especially interested in finding developers with experience
-            either building web APIs with Go or experience with functional
-            programming (e.g. Elixir, NodeJS, Clojure, F#). You might not have
-            experience with all the technologies in our stack, but you are
-            motivated to learn deeply. You will get the opportunity to work with
-            both Go and Elixir with experienced team mates who can teach and
-            pair with you to learn whatever you have less experience with.You
-            care about security, code quality, scalability, performance, and
-            simplicity. Above all, you seek operational excellence and apply the
-            best engineering practices possible. Not everything that you or your
-            team do can be perfect, but you make sure that you always know the
-            trade-offs.
-          </p>
-          <h5 class="h5">Your Role</h5>
-          <p>
-            We are looking for a personal financial planning pro (Certified
-            Financial Planner™ preferred) who will lead our client advising
-            efforts. on areas including: saving, retirement, debt management,
-          </p>
-          <h5 class="h5">Responsibilities</h5>
+          <div class="content prose">
+            <h5 class="h5">What Is the role?</h5>
+            <p>
+              We are looking for a personal financial planning pro (Certified
+              Financial Planner™ preferred) who will lead our client advising
+              efforts. You will be a fiduciary who works with clients providing
+              holistic advice on areas including: saving, retirement, debt
+              management, investments. You’ll be on the front lines helping
+              clients in what is arguably the most important position at the
+              company.
+            </p>
+            <h5 class="h5">About you</h5>
+            <p>
+              We are especially interested in finding developers with experience
+              either building web APIs with Go or experience with functional
+              programming (e.g. Elixir, NodeJS, Clojure, F#). You might not have
+              experience with all the technologies in our stack, but you are
+              motivated to learn deeply. You will get the opportunity to work
+              with both Go and Elixir with experienced team mates who can teach
+              and pair with you to learn whatever you have less experience
+              with.You care about security, code quality, scalability,
+              performance, and simplicity. Above all, you seek operational
+              excellence and apply the best engineering practices possible. Not
+              everything that you or your team do can be perfect, but you make
+              sure that you always know the trade-offs.
+            </p>
+            <h5 class="h5">Your Role</h5>
+            <p>
+              We are looking for a personal financial planning pro (Certified
+              Financial Planner™ preferred) who will lead our client advising
+              efforts. on areas including: saving, retirement, debt management,
+            </p>
+            <h5 class="h5">Responsibilities</h5>
 
-          <ul>
-            <li>
-              Enhance or improve User experience, our Site, or our Service.
-            </li>
-            <li>Process transactions.</li>
-            <li>Send emails about our Site or respond to inquiries.</li>
-            <li>
-              Send emails and updates about Conclude, including news and
-              requests for agreement to amended legal documents such
-            </li>
-            <li>
-              Perform any other function that we believe in good is necessary to
-              protect the or proper functioning of our Site or Service.
-            </li>
-          </ul>
-          <h5 class="h5">Requirements</h5>
-          <p>
-            We are looking for a personal financial planning pro (Certified
-            Financial Planner™ preferred) who will lead our client advising
-            efforts. You will be a fiduciary who works with clients providing
-            holistic advice on areas including: saving, retirement, debt
-          </p>
-          <h5 class="h5">We offer you</h5>
-          <ul>
-            <li>
-              Enhance or improve User experience, our Site, or our Service.
-            </li>
-            <li>Process transactions.</li>
-            <li>Send emails about our Site or respond to inquiries.</li>
-            <li>
-              Send emails and updates about Conclude, including news and
-              requests for agreement to amended legal documents such
-            </li>
-          </ul>
+            <ul>
+              <li>
+                Enhance or improve User experience, our Site, or our Service.
+              </li>
+              <li>Process transactions.</li>
+              <li>Send emails about our Site or respond to inquiries.</li>
+              <li>
+                Send emails and updates about Conclude, including news and
+                requests for agreement to amended legal documents such
+              </li>
+              <li>
+                Perform any other function that we believe in good is necessary
+                to protect the or proper functioning of our Site or Service.
+              </li>
+            </ul>
+            <h5 class="h5">Requirements</h5>
+            <p>
+              We are looking for a personal financial planning pro (Certified
+              Financial Planner™ preferred) who will lead our client advising
+              efforts. You will be a fiduciary who works with clients providing
+              holistic advice on areas including: saving, retirement, debt
+            </p>
+            <h5 class="h5">We offer you</h5>
+            <ul>
+              <li>
+                Enhance or improve User experience, our Site, or our Service.
+              </li>
+              <li>Process transactions.</li>
+              <li>Send emails about our Site or respond to inquiries.</li>
+              <li>
+                Send emails and updates about Conclude, including news and
+                requests for agreement to amended legal documents such
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="career-single-sidebar mt-8 lg:col-4 lg:mt-0">
@@ -126,7 +123,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -140,7 +137,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -155,10 +152,13 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group group inline-flex items-center font-semibold text-primary"
+                href="#">
+                Read More
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>
@@ -172,7 +172,7 @@
           <ul class="mt-6 flex flex-wrap items-center text-dark">
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -186,7 +186,7 @@
             </li>
             <li class="my-1 mr-8 inline-flex items-center">
               <svg
-                class="mr-1"
+                class="mr-2"
                 width="16"
                 height="20"
                 viewBox="0 0 23 33"
@@ -201,10 +201,13 @@
             </li>
             <li class="my-1 mr-8">
               <a
-                class="inline-flex items-center font-semibold text-primary"
-                href="#"
-                >Read More
-                <img class="ml-1.5" src="images/icons/arrow-right.svg" alt="" />
+                class="group inline-flex items-center font-semibold text-primary"
+                href="#">
+                Read More
+                <div
+                  class="ml-1.5 transition-all duration-300 group-hover:translate-x-1.5">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
               </a>
             </li>
           </ul>

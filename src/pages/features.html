@@ -1,3 +1,6 @@
+@@include('header.html',{"page": "features"})
+
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -15,14 +18,6 @@
 
 <section class="section">
   <div class="container">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Features</a>
-        </li>
-      </ul>
     <div class="row">
       <div class="lg:col-6 lg:order-2">
         <img
@@ -33,29 +28,8 @@
           alt="" />
       </div>
       <div class="mt-10 lg:col-6 lg:order-1 lg:mt-0">
-        <ul
-          class="breadcrumb mb-8 hidden h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2 lg:inline-flex">
-          <li class="leading-none text-dark">
-            <a class="inline-flex items-center text-primary" href="#">
-              <svg
-                class="mr-1.5"
-                width="15"
-                height="15"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.1769 15.0588H10.3533V9.41178H5.64744V15.0588H2.82391V6.58825H1.88274V16H14.118V6.58825H13.1769V15.0588ZM6.58862 15.0588V10.353H9.41215V15.0588H6.58862ZM15.8084 6.09225L15.2512 6.85178L8.00038 1.52472L0.749559 6.8499L0.192383 6.09131L8.00038 0.357666L15.8084 6.09225Z"
-                  fill="black" />
-              </svg>
-              <span class="text-sm leading-none">Home</span>
-            </a>
-          </li>
-          <li class="leading-none text-dark">
-            <span class="text-sm leading-none">/ Contact</span>
-          </li>
-        </ul>
-        <h1>
+        @@include("components/breadcrumb.html",{ "item" : "Features"})
+        <h1 class="mt-8">
           Connects with all your other tools to create a smooth experience.
         </h1>
         <p class="mt-6">
@@ -182,24 +156,10 @@
         <div class="mt-10 lg:col-6 lg:mt-0">
           <div
             class="mb-6 flex items-center space-x-4 rounded-lg bg-[#fafafa] px-6 py-8">
-            <div
-              class="relative inline-flex h-24 w-24 items-center justify-center p-3">
-              <img src="images/icons/feature-icon-1.svg" alt="" />
-              <svg
-                class="absolute left-0 top-0 h-full w-full"
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M42.8833 0.00928958C63.2143 -0.38584 82.2759 11.853 88.3264 31.1979C94.1797 49.9121 84.027 68.9907 68.0244 80.3913C52.4387 91.4948 31.5679 93.9094 16.0849 82.6642C0.66775 71.4667 -3.27813 50.9537 2.58684 32.8642C8.48561 14.6704 23.699 0.382132 42.8833 0.00928958Z"
-                  fill="#FFCC99" />
-              </svg>
-            </div>
+            <span
+              class="mx-auto mb-7 block h-20 min-w-[60px] rounded-full border border-border/50 bg-orange-50 text-center text-3xl leading-[80px] text-orange-400">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
             <div>
               <h3 class="h5 font-primary">Boost engagement</h3>
               <p class="mt-4">
@@ -210,24 +170,10 @@
           </div>
           <div
             class="mb-6 flex items-center space-x-4 rounded-lg bg-[#fafafa] px-6 py-8">
-            <div
-              class="relative inline-flex h-24 w-24 items-center justify-center p-3">
-              <img src="images/icons/feature-icon-8.svg" alt="" />
-              <svg
-                class="absolute left-0 top-0 h-full w-full"
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M42.8833 0.00928958C63.2143 -0.38584 82.2759 11.853 88.3264 31.1979C94.1797 49.9121 84.027 68.9907 68.0244 80.3913C52.4387 91.4948 31.5679 93.9094 16.0849 82.6642C0.66775 71.4667 -3.27813 50.9537 2.58684 32.8642C8.48561 14.6704 23.699 0.382132 42.8833 0.00928958Z"
-                  fill="#FFCC99" />
-              </svg>
-            </div>
+            <span
+              class="mx-auto mb-7 block h-20 min-w-[60px] rounded-full border border-border/50 bg-orange-50 text-center text-3xl leading-[80px] text-orange-400">
+              <i class="fa-solid fa-icicles"></i>
+            </span>
             <div>
               <h3 class="h5 font-primary">Reduce friction</h3>
               <p class="mt-4">
@@ -238,24 +184,10 @@
           </div>
           <div
             class="flex items-center space-x-4 rounded-lg bg-[#fafafa] px-6 py-8">
-            <div
-              class="relative inline-flex h-24 w-24 items-center justify-center p-3">
-              <img src="images/icons/feature-icon-9.svg" alt="" />
-              <svg
-                class="absolute left-0 top-0 h-full w-full"
-                width="90"
-                height="90"
-                viewBox="0 0 90 90"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  opacity="0.1"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M42.8833 0.00928958C63.2143 -0.38584 82.2759 11.853 88.3264 31.1979C94.1797 49.9121 84.027 68.9907 68.0244 80.3913C52.4387 91.4948 31.5679 93.9094 16.0849 82.6642C0.66775 71.4667 -3.27813 50.9537 2.58684 32.8642C8.48561 14.6704 23.699 0.382132 42.8833 0.00928958Z"
-                  fill="#FFCC99" />
-              </svg>
-            </div>
+            <span
+              class="mx-auto mb-7 block h-20 min-w-[60px] rounded-full border border-border/50 bg-orange-50 text-center text-3xl leading-[80px] text-orange-400">
+              <i class="fa-regular fa-compass"></i>
+            </span>
             <div>
               <h3 class="h5 font-primary">Discover strengths</h3>
               <p class="mt-4">
@@ -276,7 +208,7 @@
         </div>
       </div>
       <div class="mt-6 lg:col-6 lg:order-1 lg:mt-0">
-        <div class="">
+        <div>
           <h2 class="lg:text-4xl">
             Accept payments from devices any country in this universe
           </h2>
@@ -346,7 +278,7 @@
       <div class="mt-6 lg:col-6 lg:mt-0">
         <div class="lg:max-w-[473px]" data-tab-nav>
           <div class="features-tab-item" data-tab="0">
-            <h2 class="lg:text-2xl">
+            <h2>
               Transaction from Anyone with <br />
               a world to Anywhere
             </h2>
@@ -357,7 +289,7 @@
             </p>
           </div>
           <div class="features-tab-item mt-9" data-tab="1">
-            <h2 class="lg:text-2xl">
+            <h2>
               Integrate Checkout with Process Smoothly
             </h2>
             <p class="mt-4">
@@ -367,7 +299,7 @@
             </p>
           </div>
           <div class="features-tab-item mt-9" data-tab="2">
-            <h2 class="lg:text-2xl">Transaction Safely process and Securely</h2>
+            <h2>Transaction Safely process and Securely</h2>
             <p class="mt-4">
               Donec sollicitudin molestie malesda. Donec sollitudin molestie
               malesuada. Mauris pellentesque nec, egestas non nisi. Cras
@@ -382,24 +314,5 @@
 
 <!-- Call To action -->
 <section class="px-5 py-20 xl:py-[120px]">
-  <div class="container">
-    <div
-      class="bg-gradient row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16">
-      <div class="lg:col-11">
-        <div class="row">
-          <div class="lg:col-7">
-            <h2 class="h1 text-white">Helping teams in the world with focus</h2>
-            <a class="btn btn-white mt-8" href="#">Download The Theme</a>
-          </div>
-          <div class="mt-8 lg:col-5 lg:mt-0">
-            <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              egestas Werat viverra id et aliquet. vulputate egestas
-              sollicitudin .
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container">@@include('components/call-to-action.html')</div>
 </section>

@@ -1,7 +1,9 @@
+@@include('header.html',{"page": "home"})
+
 <!-- Banner -->
-<section class="section banner relative overflow-x-hidden">
+<section class="section banner">
   <div class="container">
-    <div class="row items-center">
+    <div class="row gy-4 items-center">
       <div class="lg:col-6">
         <h1 class="banner-title">Scale Design with Avocode Enterprise</h1>
         <p class="mt-6">
@@ -10,7 +12,7 @@
         </p>
         <a
           class="btn btn-primary mt-8"
-          href="https://github.com/themefisher/pinwheel-tailwind">
+          href="https://github.com/themefisher/pinwheel-tailwind ">
           Download The Theme
         </a>
       </div>
@@ -32,7 +34,7 @@
 <!-- ./end Banner -->
 
 <!-- Key features -->
-<section class="section key-feature relative overflow-hidden">
+<section class="section key-feature relative">
   <img
     class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
     src="images/icons/feature-shape.svg"
@@ -243,7 +245,7 @@
     <div class="row gx-5 mt-12 items-center lg:mt-0">
       <div class="lg:col-7 lg:order-2">
         <div class="video pb-5 pr-9">
-          <div class="video-thumbnail overflow-hidden rounded-2xl">
+          <div class="video-thumbnail rounded-2xl">
             <img
               class="w-full object-contain"
               src="images/intro-thumbnail.png"
@@ -377,30 +379,5 @@
 
 <!-- Call To action -->
 <section class="px-5 py-20 xl:py-[120px]">
-  <div class="container">
-    <div
-      class="bg-gradient row justify-center rounded-b-[20px] rounded-t-[20px] px-[30px] py-14 md:rounded-b-[80px] lg:py-16">
-      <div class="lg:col-11">
-        <div class="row">
-          <div class="lg:col-7">
-            <h2 class="h1 text-white">Helping teams in the world with focus</h2>
-            <a class="btn btn-white mt-8" href="#">Download The Theme</a>
-          </div>
-          <div class="mt-8 lg:col-5 lg:mt-0">
-            <p class="mb-4 text-white">
-              Consectetur adipiscing elit. Morbi egestas Werat viverra id et
-              aliquet. vulputate egestas sollicitudin elit. Delectus aperiam
-              velit nisi impedit molestiae sit? Excepturi similique ad deleniti
-              cum sollicitudin.
-            </p>
-            <p class="text-white">
-              Delectus aperiam velit nisi sit amet consectetur adipisicing elit.
-              Delectus aperiam velit nisi impedit molestiae sit? Excepturi
-              similique ad deleniti cum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container">@@include('components/call-to-action.html')</div>
 </section>

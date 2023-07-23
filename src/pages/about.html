@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "about"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero py-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#"> About </a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "About"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">About our company</h1>
@@ -33,7 +28,7 @@
         malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
         ligula sed magna dictum porta. Lorem
       </p>
-      <div class="mt-11 justify-center sm:flex">
+      <div class="mt-11">
         <a class="btn btn-primary m-3" href="#"> Download The Theme </a>
         <a class="btn btn-outline-primary m-3" href="#">Learn more</a>
       </div>
@@ -83,7 +78,7 @@
 <!-- end Common hero -->
 
 <!-- Gallery -->
-<section class="section overflow-hidden">
+<section class="section">
   <div class="container">
     <div class="row justify-center text-center">
       <div class="md:col-10 lg:col-8">
@@ -273,7 +268,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Eleanor Pena</h5>
               <p class="mt-1.5">Co-founder & COO</p>
             </div>
@@ -288,7 +283,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Savannah Nguyen</h5>
               <p class="mt-1.5">Head of Infrastructure</p>
             </div>
@@ -303,7 +298,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Courtney Henry</h5>
               <p class="mt-1.5">Head of Brand Marketing</p>
             </div>
@@ -318,7 +313,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Floyd Miles</h5>
               <p class="mt-1.5">Head of Infrastructure</p>
             </div>
@@ -333,7 +328,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Robert Fox</h5>
               <p class="mt-1.5">Head of Product Design</p>
             </div>
@@ -348,7 +343,7 @@
               </div>
             </div>
             <div
-              class="text-center mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 shadow-lg">
+              class="mt-6 w-full flex-1 rounded-xl bg-white px-4 py-8 text-center shadow-lg">
               <h5 class="font-primary">Darrell Steward</h5>
               <p class="mt-1.5">Head of People & HR</p>
             </div>

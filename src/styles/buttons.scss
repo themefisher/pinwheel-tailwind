@@ -1,11 +1,15 @@
 .btn {
-  @apply inline-block rounded-[50px] border bg-transparent px-8 py-[14px] text-center text-sm font-medium capitalize transition-all duration-300;
+  @apply inline-block rounded-[50px] border px-8 py-[14px] text-center text-sm font-medium capitalize transition-all duration-300;
 
   &-primary {
-    @apply cursor-pointer border-0 bg-gradient-to-tl text-white hover:-translate-y-px hover:shadow-lg hover:shadow-primary/30;
+    @apply relative z-10 cursor-pointer border-0 text-white before:-z-10 hover:-translate-y-px hover:shadow-lg hover:shadow-primary/30;
+
+    &::before {
+      @apply absolute bottom-0 left-0 right-0 top-0 rounded-[inherit] bg-gradient-to-tl transition-all content-[""];
+    }
   }
   &-outline-primary {
-    @apply relative z-10 border-primary text-dark hover:text-white hover:shadow-lg hover:shadow-primary/30 hover:before:-z-10 hover:before:opacity-100;
+    @apply relative z-10 border-primary text-dark hover:-translate-y-px hover:text-white hover:shadow-lg hover:shadow-primary/30 hover:before:-z-10 hover:before:opacity-100;
 
     &::before {
       @apply absolute bottom-0 left-0 right-0 top-0 rounded-[inherit] bg-gradient-to-tl opacity-0 transition-all content-[""];

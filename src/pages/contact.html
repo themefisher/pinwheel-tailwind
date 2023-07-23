@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "contact"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero pb-6 pt-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#">Changelogs</a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Changelog"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">
@@ -36,7 +31,7 @@
 </section>
 <!-- end Common hero -->
 
-<section class="section overflow-hidden pt-0">
+<section class="section pt-0">
   <div class="container">
     <div class="row">
       <div class="mb-10 text-center md:col-6 md:order-2 md:mb-0 md:pt-9">
@@ -49,7 +44,7 @@
         </div>
       </div>
       <div class="md:col-6 md:order-1">
-        <form class="lg:max-w-[484px]" action="#" method="POST">
+        <form action="#" method="POST">
           <div class="form-group mb-5">
             <label class="form-label" for="name">Full Name</label>
             <input
@@ -83,10 +78,9 @@
               cols="30"
               rows="10"></textarea>
           </div>
-          <input
-            class="btn btn-primary w-full"
-            type="submit"
-            value="Send Message" />
+          <button class="btn btn-primary w-full" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </div>

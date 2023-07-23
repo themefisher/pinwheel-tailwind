@@ -1,3 +1,5 @@
+@@include('header.html',{"page": "blog"})
+
 <!-- floating assets -->
 <img
   class="floating-bubble-1 absolute right-0 top-0 -z-[1]"
@@ -17,14 +19,7 @@
 <section class="page-hero pb-14 pt-16">
   <div class="container">
     <div class="text-center">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-list-item">
-          <a class="text-primary" href="index.html"> Home </a>
-        </li>
-        <li class="breadcrumb-list-item">
-          <a href="#"> Blog </a>
-        </li>
-      </ul>
+      @@include("components/breadcrumb.html",{ "item" : "Blog"})
     </div>
     <div class="page-hero-content mx-auto max-w-[768px] text-center">
       <h1 class="mb-5 mt-8">
@@ -53,9 +48,9 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html"
-                >The Ultimate Guide to Google My Business</a
-              >
+              <a href="blog-single.html" class="hover:underline">
+                The Ultimate Guide to Google My Business
+              </a>
             </h3>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh dolor sit amet,
@@ -73,7 +68,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                01 Sep, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -106,7 +101,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 The Ultimate Guide to Redirects Explained
               </a>
             </h3>
@@ -126,7 +121,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                02 Apr, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -159,7 +154,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 6 Product Launch theif Email Example
               </a>
             </h3>
@@ -179,7 +174,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                04 Dec, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -212,7 +207,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 Keep on Top of your With Felix's Slick New
               </a>
             </h3>
@@ -232,7 +227,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                12 Aug, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -253,12 +248,12 @@
         </div>
       </div>
     </div>
-    <div class="category-filter mb-10 mt-3 rounded-xl bg-[#EEEEEE] px-4">
+    <div class="category-filter mb-10 mt-3 rounded-xl bg-theme-light/40 px-4">
       <ul class="filter-list">
         <li>
-          <a class="filter-btn filter-btn-active btn btn-sm" href="#"
-            >All Categories</a
-          >
+          <a class="filter-btn filter-btn-active btn btn-sm" href="#">
+            All Categories
+          </a>
         </li>
         <li>
           <a class="filter-btn btn btn-sm" href="#">Development</a>
@@ -289,7 +284,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 How Video Analytics Can Help Understand and Increase
               </a>
             </h3>
@@ -309,7 +304,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                09 Sep, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -342,7 +337,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 Keep on Top of your To-Do List With Slick New Comment
               </a>
             </h3>
@@ -362,7 +357,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                16 Sep, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -395,7 +390,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 6 Product Launch Email Examples You’ll Want to Steal
               </a>
             </h3>
@@ -415,7 +410,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                13 Nov, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -448,7 +443,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 Learn from the Best: 6 of the Top Automotive Email
               </a>
             </h3>
@@ -468,7 +463,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                02 Jan, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -501,7 +496,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 8 E-Commerce Email Marketing Best Practices To
               </a>
             </h3>
@@ -521,7 +516,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                05 Mar, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -554,7 +549,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 Learn from These 6 Travel Boost Leads by 162 Percent
               </a>
             </h3>
@@ -574,7 +569,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                03 Aug, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -607,7 +602,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 How Video Analytics Can Help Understand and Increase
               </a>
             </h3>
@@ -627,7 +622,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                06 Jun, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -660,7 +655,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 Keep on Top of your To-Do List With Slick New Comment
               </a>
             </h3>
@@ -680,7 +675,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                22 Aug, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg
@@ -713,7 +708,7 @@
               <a class="tag" href="#">Development</a>
             </div>
             <h3 class="h4 card-title">
-              <a href="blog-single.html">
+              <a href="blog-single.html" class="hover:underline">
                 6 Product Launch Email Examples You’ll Want to Steal
               </a>
             </h3>
@@ -733,7 +728,7 @@
                     d="M12.5 2H11V0.375C11 0.16875 10.8313 0 10.625 0H9.375C9.16875 0 9 0.16875 9 0.375V2H5V0.375C5 0.16875 4.83125 0 4.625 0H3.375C3.16875 0 3 0.16875 3 0.375V2H1.5C0.671875 2 0 2.67188 0 3.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V3.5C14 2.67188 13.3281 2 12.5 2ZM12.3125 14.5H1.6875C1.58438 14.5 1.5 14.4156 1.5 14.3125V5H12.5V14.3125C12.5 14.4156 12.4156 14.5 12.3125 14.5Z"
                     fill="#939393" />
                 </svg>
-                21st Sep,2020
+                21 Feb, 2022
               </span>
               <span class="inline-flex items-center text-xs text-text">
                 <svg

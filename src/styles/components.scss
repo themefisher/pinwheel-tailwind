@@ -87,13 +87,13 @@
 }
 // Breadcrumb
 .breadcrumb {
-  @apply mx-auto mb-0 inline-flex h-8 gap-4 w-fit items-center justify-center space-x-2 rounded-3xl bg-theme-light/40 p-5;
+  @apply mx-auto mb-0 inline-flex h-8 w-fit items-center justify-center gap-4 space-x-2 rounded-3xl bg-theme-light/40 p-5;
 
   &-list-item {
     @apply relative align-middle capitalize text-dark;
 
     &:not(:first-child)::before {
-      @apply absolute top-1/2 h-[60%] w-[2px] rotate-12 left-[-12px] -translate-y-1/2 bg-dark/70 content-[""];
+      @apply absolute left-[-12px] top-1/2 h-[60%] w-[2px] -translate-y-1/2 rotate-12 bg-dark/70 content-[""];
     }
 
     &:not(:last-child) a:hover {
@@ -106,7 +106,7 @@
     }
 
     &:first-child {
-      @apply relative pl-8 align-middle font-normal text-primary after:content-[""];
+      @apply relative pl-7 align-middle font-normal text-primary after:content-[""];
 
       &::after {
         @apply absolute left-0 top-[48%] h-[20px] w-[20px] -translate-y-1/2 bg-center bg-no-repeat;
@@ -114,7 +114,7 @@
       }
     }
     &:last-child a {
-      @apply pointer-events-none cursor-auto opacity-70 select-none;
+      @apply pointer-events-none cursor-auto select-none opacity-70;
     }
   }
 }
@@ -186,9 +186,9 @@
 }
 
 .accordion-content {
-  max-height: 0;
   overflow: hidden;
-  padding: 0 1rem;
+  max-height: 0;
+  transition: all 0.3s cubic-bezier(0.81, 0.12, 0.19, 0.95);
 }
 
 .accordion.active .accordion-icon {
@@ -397,7 +397,7 @@ select:invalid {
 
 //tag
 .tag {
-  @apply inline-block h-8 rounded-3xl border border-primary bg-[#FAEBE1] px-3.5 py-2 text-sm leading-none text-primary transition-all hover:bg-primary hover:text-white;
+  @apply inline-block h-8 rounded-3xl border border-primary/20 bg-[#FAEBE1] px-3.5 py-2 text-sm leading-none text-primary transition-colors duration-300 hover:bg-primary hover:text-white;
 }
 
 //featured-posts
@@ -431,11 +431,11 @@ select:invalid {
 }
 
 .filter-btn {
-  @apply m-3 rounded-3xl border border-[#A9A9A9] text-dark;
+  @apply m-3 rounded-3xl border border-theme-dark/20 text-dark;
 
   &-active,
   &.active {
-    @apply border-white bg-white text-dark shadow-[0px_10px_20px_rgba(0,0,0,0.05)];
+    @apply border-white bg-white text-dark shadow-lg;
   }
 }
 
@@ -502,8 +502,8 @@ select:invalid {
   }
 }
 
-//changelogs
-.changelogs {
+//changelog
+.changelog {
   &-content {
     @apply relative;
     &::before {
@@ -513,7 +513,7 @@ select:invalid {
     ul {
       @apply list-disc pl-6 marker:text-dark;
 
-      + .changelogs-tag {
+      + .changelog-tag {
         @apply mt-6;
       }
 
@@ -587,6 +587,11 @@ select:invalid {
     @apply -rotate-90;
   }
 
+  .accordion-content {
+    p + p {
+      @apply mt-6;
+    }
+  }
   .accordion.active {
     .accordion-icon {
       @apply rotate-0;
@@ -594,10 +599,6 @@ select:invalid {
 
     .accordion-content {
       @apply pb-6 pt-1;
-
-      p + p {
-        @apply mt-6;
-      }
     }
   }
 }
@@ -614,7 +615,7 @@ select:invalid {
   @apply cursor-pointer border-l border-[#999999] pl-6;
 
   h2 {
-    @apply font-primary text-2xl font-bold text-[#999999];
+    @apply font-primary text-2xl font-semibold text-[#999999];
   }
 
   p {
