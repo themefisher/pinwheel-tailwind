@@ -251,27 +251,41 @@
     <div class="category-filter mb-10 mt-3 rounded-xl bg-theme-light/40 px-4">
       <ul class="filter-list">
         <li>
-          <a class="filter-btn filter-btn-active btn btn-sm" href="#">
+          <a
+            data-group="all"
+            class="filter-btn filter-btn-active btn btn-sm"
+            href="#">
             All Categories
           </a>
         </li>
         <li>
-          <a class="filter-btn btn btn-sm" href="#">Development</a>
+          <a data-group="development" class="filter-btn btn btn-sm" href="#"
+            >Development</a
+          >
         </li>
         <li>
-          <a class="filter-btn btn btn-sm" href="#">Updates</a>
+          <a data-group="updates" class="filter-btn btn btn-sm" href="#"
+            >Updates</a
+          >
         </li>
         <li>
-          <a class="filter-btn btn btn-sm" href="#">Email Marketing</a>
+          <a data-group="email-marketing" class="filter-btn btn btn-sm" href="#"
+            >Email Marketing</a
+          >
         </li>
         <li>
-          <a class="filter-btn btn btn-sm" href="#">Rate Optimization</a>
+          <a
+            data-group="rate-optimization"
+            class="filter-btn btn btn-sm"
+            href="#"
+            >Rate Optimization</a
+          >
         </li>
       </ul>
     </div>
     <h2 class="h4 mb-4">Featured Posts</h2>
-    <div class="row">
-      <div class="mb-8 md:col-6 lg:col-4">
+    <div class="row filter-items">
+      <div data-groups='["development"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -324,7 +338,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["development"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -377,7 +391,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["rate-optimization"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -430,7 +444,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["rate-optimization"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -483,7 +497,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div  data-groups='["updates"]'class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -536,7 +550,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["development"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -589,7 +603,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["email-marketing"]'  class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -642,7 +656,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["email-marketing"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"
@@ -695,7 +709,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-8 md:col-6 lg:col-4">
+      <div data-groups='["updates"]' class="mb-8 md:col-6 lg:col-4">
         <div class="card">
           <img
             class="card-img"

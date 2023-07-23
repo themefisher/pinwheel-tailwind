@@ -191,4 +191,29 @@
       });
     });
   }
+
+  //shuffle
+  const filterItems = document.querySelector(".filter-items");
+  if (filterItems) {
+    const myShuffle = new Shuffle(filterItems, {
+      itemSelector: ".integration-tab-item",
+      sizer: ".integration-tab-item",
+      buffer: 1,
+    });
+    const tabLinks = document.querySelectorAll(".integration-tab .filter-btn");
+    tabLinks.forEach((tabItem) => {
+      tabItem.addEventListener("click", function (e) {
+        e.preventDefault();
+        let filter;
+        const group = tabItem.getAttribute("data-group");
+        filter = group;
+        if (filter === "all") {
+          filter = Shuffle.ALL_ITEMS;
+        }
+        tabLinks.forEach((link) => link.classList.remove("filter-btn-active"));
+        this.classList.add("filter-btn-active");
+        myShuffle.filter(filter);
+      });
+    });
+  }
 })();
