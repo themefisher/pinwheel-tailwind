@@ -5,7 +5,7 @@
 
 // Preloader
 .preloader {
-  @apply w-screen transition-colors duration-300 h-screen fixed bg-white left-0 bottom-0 z-50 overflow-hidden;
+  @apply fixed bottom-0 left-0 z-50 h-screen w-screen overflow-hidden bg-white transition-colors duration-300;
 }
 
 // Container
@@ -29,7 +29,7 @@
     @apply m-1 inline-block leading-none;
 
     a {
-      @apply inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-center transition-all duration-200 hover:bg-primary;
+      @apply inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-center transition-colors duration-200 hover:bg-primary;
 
       svg {
         @apply m-auto h-[14px];
@@ -46,50 +46,6 @@
   }
 }
 
-// notice
-.notice {
-  .notice-body {
-    p {
-      @apply my-0 text-text;
-    }
-  }
-
-  &.note {
-    .notice-head {
-      @apply bg-[#7fb6d9];
-    }
-    .notice-body {
-      @apply bg-[#7fb6d9]/25;
-    }
-  }
-
-  &.tip {
-    .notice-head {
-      @apply bg-[#73e273];
-    }
-    .notice-body {
-      @apply bg-[#73e273]/25;
-    }
-  }
-
-  &.info {
-    .notice-head {
-      @apply bg-[#ffc392];
-    }
-    .notice-body {
-      @apply bg-[#f0b37e]/25;
-    }
-  }
-
-  &.warning {
-    .notice-head {
-      @apply bg-[#ff918c];
-    }
-    .notice-body {
-      @apply bg-[#ff918c]/25;
-    }
-  }
-}
 // Breadcrumb
 .breadcrumb {
   @apply mx-auto mb-0 inline-flex h-8 w-fit items-center justify-center gap-4 space-x-2 rounded-3xl bg-theme-light/40 p-5;
@@ -98,7 +54,7 @@
     @apply relative align-middle capitalize text-dark;
 
     &:not(:first-child)::before {
-      @apply absolute left-[-12px] top-1/2 h-[60%] w-[2px] -translate-y-1/2 rotate-12 bg-dark/70 content-[""];
+      @apply absolute left-[-12px] top-1/2 h-[60%] w-[2px] -translate-y-1/2 rotate-12 bg-theme-dark/70 content-[""];
     }
 
     &:not(:last-child) a:hover {
@@ -123,99 +79,65 @@
     }
   }
 }
-// breadcrumb
-// .breadcrumb {
-//   @apply inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light/40 px-5 py-3;
-// }
-
-// // tabcomponent
-// .active-tab {
-//   @apply rounded-t-lg bg-theme-light text-primary;
-// }
-
-// .tab-element {
-//   @apply hidden;
-//   &.active-tab {
-//     @apply block;
-//   }
-// }
 
 // tabcomponent
 .tab-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  border-bottom: 1px solid #aaa;
+  @apply m-0 flex list-none border-b border-solid border-b-border p-0;
 }
 
 .tab-nav-item {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  opacity: 0.8;
+  @apply cursor-pointer px-4 py-2 opacity-80;
 }
 
 .tab-nav-item.active {
-  border-bottom: 3px solid #aaa;
-  opacity: 1;
+  @apply border-b-2 border-solid border-b-border opacity-100;
 }
 
 .tab-content .tab-content-panel {
-  display: none;
-  padding: 1rem 0.5rem;
+  @apply hidden px-2 py-4;
 }
 
 .tab-content .tab-content-panel.active {
-  display: block;
+  @apply block;
 }
 
 // accordion
 .accordion {
-  background-color: #fff;
+  @apply bg-white;
 }
 
 .accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1.6rem;
+  @apply flex cursor-pointer items-center justify-between p-4 text-[1.6rem];
 }
 
 .accordion-icon {
-  width: 0.78em;
-  height: 0.78em;
-  transform: rotate(0deg);
-  transition: transform 0.2s ease;
+  @apply h-[0.78em] w-[0.78em] rotate-0 transition-transform duration-[0.2s] ease-[ease];
 }
 
 .accordion-content {
-  overflow: hidden;
-  max-height: 0;
-  transition: all 0.3s cubic-bezier(0.81, 0.12, 0.19, 0.95);
+  @apply max-h-0 overflow-hidden transition-all duration-300 ease-slow-ease-in-out;
 }
 
 .accordion.active .accordion-icon {
-  transform: rotate(180deg);
+  @apply rotate-180;
 }
 
 .accordion.active .accordion-content {
-  max-height: 100vh;
+  @apply max-h-screen;
 }
 
 // form style
 .form-control,
 .form-select {
-  @apply h-[60px] w-full rounded-lg border-border text-dark placeholder:text-[#B0B0B0] focus:border-primary focus:ring-transparent;
+  @apply w-full rounded-lg border-border py-4 pl-4 text-dark placeholder:text-theme-dark/30 focus:border-theme-dark/50 focus:ring-transparent;
 }
 
 .form-label {
-  @apply mb-2 block font-secondary text-[#555];
+  @apply mb-2 block font-secondary text-dark/90;
 }
 
 select:invalid {
-  color: #b0b0b0 !important;
+  @apply text-theme-dark/30;
 }
 
 // content style
@@ -263,14 +185,6 @@ select:invalid {
   p {
     @apply mt-3 text-[15px]/normal;
   }
-
-  // .icon {
-  //   @apply h-6 w-6;
-
-  //   img {
-  //     @apply h-full w-full object-contain;
-  //   }
-  // }
 }
 
 //video
@@ -328,7 +242,7 @@ select:invalid {
 //pagination style
 .reviews-carousel {
   .swiper-pagination-bullet {
-    @apply h-3.5 w-3.5 bg-[#8d8d8d];
+    @apply h-3.5 w-3.5 bg-theme-dark/40;
 
     &-active {
       @apply bg-primary;
@@ -640,26 +554,7 @@ select:invalid {
 
 .filter-list {
   @apply flex flex-nowrap items-center overflow-auto;
-  // scrollbar-width: auto;
-  // scrollbar-color: #8f54a0 #ffffff;
-
   .filter-btn {
     @apply whitespace-nowrap;
   }
-
-  // /* ===== Scrollbar CSS ===== */
-  // /* Firefox */
-  // &::-webkit-scrollbar {
-  //   height: 1px;
-  // }
-
-  // &::-webkit-scrollbar-track {
-  //   background: #eee;
-  // }
-
-  // &::-webkit-scrollbar-thumb {
-  //   background-color: #eee;
-  //   border-radius: 0px;
-  //   border: 0px solid #eee;
-  // }
 }

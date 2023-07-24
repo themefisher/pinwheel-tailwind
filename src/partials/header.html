@@ -6,6 +6,7 @@
         <img src="images/logo.svg" height="30" width="147" alt="logo" />
       </a>
     </div>
+
     <!-- navbar toggler -->
     <button class="navbar-toggler group relative" aria-label="navbar toggler">
       <div
@@ -67,7 +68,7 @@
           <i class="fa-solid fa-chevron-down arrow-icon"></i>
         </span>
         <ul
-          class="nav-dropdown-list hidden group-[.active]:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+          class="nav-dropdown-list lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
           <li class="nav-dropdown-item">
             <a
               href="career.html"
@@ -127,7 +128,11 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a href="contact.html" class="nav-link @@if (context.page === 'contact'){active}">Contact</a>
+        <a
+          href="contact.html"
+          class="nav-link @@if (context.page === 'contact'){active}"
+          >Contact</a
+        >
       </li>
       <li class="nav-item mt-3.5 lg:hidden">
         <a class="btn btn-white btn-sm border-border" href="signin.html">

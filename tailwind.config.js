@@ -69,6 +69,9 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      transitionTimingFunction: {
+        'slow-ease-in-out': 'cubic-bezier(0.54, 0.05, 0.26, 0.47)',
+      },
     },
   },
   plugins: [

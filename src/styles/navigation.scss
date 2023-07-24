@@ -1,6 +1,6 @@
 // Navbar Collapse
 #nav-menu {
-  @apply max-lg:block max-lg:max-h-0 max-lg:overflow-hidden max-lg:transition-[max-height] max-lg:duration-[0.3s] max-lg:ease-[cubic-bezier(0.81,0.12,0.19,0.95)];
+  @apply max-lg:block max-lg:max-h-0 max-lg:overflow-hidden max-lg:transition-[max-height] max-lg:duration-300 max-lg:ease-slow-ease-in-out;
 }
 #nav-menu.active {
   @apply max-lg:max-h-[1000px];
@@ -35,7 +35,7 @@
 }
 
 .nav-link {
-  @apply relative block p-3 py-2 text-dark transition hover:text-primary hover:lg:after:w-[70%] md:px-2 lg:inline-block;
+  @apply relative block p-3 py-2 text-dark transition hover:text-primary md:px-2 lg:inline-block hover:lg:after:w-[70%];
 
   &:after {
     @apply absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-gradient-to-tl transition-all duration-300 content-[''];
@@ -83,13 +83,15 @@
   // Header Links
   .nav-link,
   .nav-dropdown-link {
-    @apply text-sm;
+    @apply block text-sm;
+  }
+
+  .arrow-icon {
+    @apply ml-2;
   }
 
   .nav-dropdown.active {
     & > .nav-link {
-      @apply block;
-
       .arrow-icon {
         transform: rotate(180deg);
       }
@@ -98,6 +100,10 @@
     .nav-dropdown-list {
       @apply block;
     }
+  }
+
+  .nav-dropdown-list {
+    @apply mt-0 p-0 duration-300 ease-slow-ease-in-out max-h-0 overflow-hidden transition-all group-[.active]:px-4 group-[.active]:py-3 group-[.active]:max-lg:max-h-screen;
   }
 }
 
