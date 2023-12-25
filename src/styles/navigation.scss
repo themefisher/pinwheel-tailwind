@@ -38,7 +38,8 @@ input#nav-toggle:checked ~ #nav-menu {
 .nav-link {
   @apply block p-3 py-2 text-[15px] text-dark transition hover:text-primary md:px-2 lg:inline-block;
 
-  &.active {
+  &.active,
+  &:hover {
     @apply relative;
 
     &::after {
