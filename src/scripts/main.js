@@ -171,4 +171,26 @@
       });
     });
   }
+
+  // Set active navigation
+  function setNavigation() {
+      var path = window.location.pathname;
+      path = path.replace(/\/$/, "");
+      path = decodeURIComponent(path);
+
+      const navigation = document.querySelectorAll("#nav-menu > li");
+
+      navigation.forEach((list) => {
+        var link = list.querySelector('a'),
+          href = link.getAttribute('href');
+          link.classList.remove("active");
+
+          if ( path.split('/')[1] === href) {
+            link.classList.add("active");
+          }
+      });
+  }
+  setNavigation();
+
+
 })();
