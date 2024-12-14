@@ -29,7 +29,6 @@ module.exports = {
     "./src/partials/**/*.html",
     "./src/scripts/**/*.js",
   ],
-  safelist: [{ pattern: /^swiper-/ }],
   theme: {
     screens: {
       sm: "540px",

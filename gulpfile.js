@@ -1,18 +1,23 @@
 "use strict";
 
-const sass = require("gulp-sass")(require("sass"));
-const gulp = require("gulp");
-const postcss = require("gulp-postcss");
-const tailwindcss = require("tailwindcss");
-const gutil = require("gulp-util");
-const jshint = require("gulp-jshint");
-const fileinclude = require("gulp-file-include");
-const bs = require("browser-sync").create();
-const rimraf = require("rimraf");
-const wrapper = require("gulp-wrapper");
-const comments = require("gulp-header-comment");
-const template = require("gulp-template");
-const theme = require("./src/theme.json");
+import gulp from 'gulp';
+import template from 'gulp-template';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass( dartSass );
+
+import postcss from 'gulp-postcss';
+import tailwindcss from 'tailwindcss';
+// import gutil from 'gulp-util';
+import jshint from 'gulp-jshint';
+import fileinclude from 'gulp-file-include';
+import bs from 'browser-sync';
+import rimraf from 'rimraf';
+import wrapper from 'gulp-wrapper';
+import comments from 'gulp-header-comment';
+import autoprefixer from 'autoprefixer';
+
+import theme from './src/theme.json' assert { type: "json" };
 const node_env = process.argv.slice(2)[0];
 const headerComments = `WEBSITE: https://themefisher.com
                         TWITTER: https://twitter.com/themefisher
@@ -81,7 +86,7 @@ gulp.task("styles", function () {
       }).on("error", sass.logError)
     )
     .pipe(
-      postcss([tailwindcss("./tailwind.config.js"), require("autoprefixer")])
+      postcss([tailwindcss("./tailwind.config.js"), autoprefixer])
     )
     .pipe(comments(headerComments))
     .pipe(gulp.dest(path.build.dir + "styles/"))
@@ -93,12 +98,12 @@ gulp.task("styles", function () {
 });
 
 // scripts
-gulp.task("scripts", function () {
+gulp.task("scripts", function (done) {
   return gulp
     .src(path.src.scripts)
     .pipe(jshint("./.jshintrc"))
     .pipe(jshint.reporter("jshint-stylish"))
-    .on("error", gutil.log)
+    .on("error", done)
     .pipe(comments(headerComments))
     .pipe(gulp.dest(path.build.dir + "scripts/"))
     .pipe(
@@ -122,7 +127,7 @@ gulp.task("plugins", function () {
 
 // public files
 gulp.task("public", function () {
-  return gulp.src(path.src.public).pipe(gulp.dest(path.build.dir));
+  return gulp.src(path.src.public, {encoding: false}).pipe(gulp.dest(path.build.dir));
 });
 
 // Clean Theme Folder
