@@ -169,6 +169,18 @@
   @apply mb-2 block font-secondary text-[#555];
 }
 
+.valid-feedback {
+  @apply ml-4 text-sm text-green-600 dark:text-green-500;
+}
+
+.invalid-feedback {
+  @apply ml-4 text-sm text-red-600 dark:text-red-500;
+}
+
+.helper-text {
+  @apply ml-4 text-sm text-gray-500 dark:text-gray-400;
+}
+
 select:invalid {
   color: #b0b0b0 !important;
 }
